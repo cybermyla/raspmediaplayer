@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D31CA3011000736F43 /* AppDelegate.swift */; };
+		E26F05D61CA3011000736F43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D51CA3011000736F43 /* ViewController.swift */; };
+		E26F05D91CA3011000736F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F05D71CA3011000736F43 /* Main.storyboard */; };
+		E26F05DC1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E26F05DA1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld */; };
+		E26F05DE1CA3011000736F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26F05DD1CA3011000736F43 /* Assets.xcassets */; };
+		E26F05E11CA3011000736F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */; };
+		E26F05EC1CA3011000736F43 /* RaspMediaPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05EB1CA3011000736F43 /* RaspMediaPlayerTests.swift */; };
+		E26F05F71CA3011000736F43 /* RaspMediaPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05F61CA3011000736F43 /* RaspMediaPlayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E26F05E81CA3011000736F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26F05C81CA3011000736F43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26F05CF1CA3011000736F43;
+			remoteInfo = RaspMediaPlayer;
+		};
+		E26F05F31CA3011000736F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26F05C81CA3011000736F43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26F05CF1CA3011000736F43;
+			remoteInfo = RaspMediaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E26F05D01CA3011000736F43 /* RaspMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaspMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26F05D31CA3011000736F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E26F05D51CA3011000736F43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E26F05D81CA3011000736F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E26F05DB1CA3011000736F43 /* RaspMediaPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RaspMediaPlayer.xcdatamodel; sourceTree = "<group>"; };
+		E26F05DD1CA3011000736F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E26F05E01CA3011000736F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E26F05E21CA3011000736F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26F05E71CA3011000736F43 /* RaspMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26F05EB1CA3011000736F43 /* RaspMediaPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspMediaPlayerTests.swift; sourceTree = "<group>"; };
+		E26F05ED1CA3011000736F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26F05F21CA3011000736F43 /* RaspMediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspMediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26F05F61CA3011000736F43 /* RaspMediaPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspMediaPlayerUITests.swift; sourceTree = "<group>"; };
+		E26F05F81CA3011000736F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E26F05CD1CA3011000736F43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05E41CA3011000736F43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05EF1CA3011000736F43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E26F05C71CA3011000736F43 = {
+			isa = PBXGroup;
+			children = (
+				E26F05D21CA3011000736F43 /* RaspMediaPlayer */,
+				E26F05EA1CA3011000736F43 /* RaspMediaPlayerTests */,
+				E26F05F51CA3011000736F43 /* RaspMediaPlayerUITests */,
+				E26F05D11CA3011000736F43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E26F05D11CA3011000736F43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26F05D01CA3011000736F43 /* RaspMediaPlayer.app */,
+				E26F05E71CA3011000736F43 /* RaspMediaPlayerTests.xctest */,
+				E26F05F21CA3011000736F43 /* RaspMediaPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26F05D21CA3011000736F43 /* RaspMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E26F05D31CA3011000736F43 /* AppDelegate.swift */,
+				E26F05D51CA3011000736F43 /* ViewController.swift */,
+				E26F05D71CA3011000736F43 /* Main.storyboard */,
+				E26F05DD1CA3011000736F43 /* Assets.xcassets */,
+				E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */,
+				E26F05E21CA3011000736F43 /* Info.plist */,
+				E26F05DA1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld */,
+			);
+			path = RaspMediaPlayer;
+			sourceTree = "<group>";
+		};
+		E26F05EA1CA3011000736F43 /* RaspMediaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E26F05EB1CA3011000736F43 /* RaspMediaPlayerTests.swift */,
+				E26F05ED1CA3011000736F43 /* Info.plist */,
+			);
+			path = RaspMediaPlayerTests;
+			sourceTree = "<group>";
+		};
+		E26F05F51CA3011000736F43 /* RaspMediaPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E26F05F61CA3011000736F43 /* RaspMediaPlayerUITests.swift */,
+				E26F05F81CA3011000736F43 /* Info.plist */,
+			);
+			path = RaspMediaPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E26F05CF1CA3011000736F43 /* RaspMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26F05FB1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayer" */;
+			buildPhases = (
+				E26F05CC1CA3011000736F43 /* Sources */,
+				E26F05CD1CA3011000736F43 /* Frameworks */,
+				E26F05CE1CA3011000736F43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaspMediaPlayer;
+			productName = RaspMediaPlayer;
+			productReference = E26F05D01CA3011000736F43 /* RaspMediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E26F05E61CA3011000736F43 /* RaspMediaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26F05FE1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerTests" */;
+			buildPhases = (
+				E26F05E31CA3011000736F43 /* Sources */,
+				E26F05E41CA3011000736F43 /* Frameworks */,
+				E26F05E51CA3011000736F43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26F05E91CA3011000736F43 /* PBXTargetDependency */,
+			);
+			name = RaspMediaPlayerTests;
+			productName = RaspMediaPlayerTests;
+			productReference = E26F05E71CA3011000736F43 /* RaspMediaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E26F05F11CA3011000736F43 /* RaspMediaPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26F06011CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerUITests" */;
+			buildPhases = (
+				E26F05EE1CA3011000736F43 /* Sources */,
+				E26F05EF1CA3011000736F43 /* Frameworks */,
+				E26F05F01CA3011000736F43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26F05F41CA3011000736F43 /* PBXTargetDependency */,
+			);
+			name = RaspMediaPlayerUITests;
+			productName = RaspMediaPlayerUITests;
+			productReference = E26F05F21CA3011000736F43 /* RaspMediaPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26F05C81CA3011000736F43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Miloslav Linhart";
+				TargetAttributes = {
+					E26F05CF1CA3011000736F43 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					E26F05E61CA3011000736F43 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = E26F05CF1CA3011000736F43;
+					};
+					E26F05F11CA3011000736F43 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = E26F05CF1CA3011000736F43;
+					};
+				};
+			};
+			buildConfigurationList = E26F05CB1CA3011000736F43 /* Build configuration list for PBXProject "RaspMediaPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E26F05C71CA3011000736F43;
+			productRefGroup = E26F05D11CA3011000736F43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E26F05CF1CA3011000736F43 /* RaspMediaPlayer */,
+				E26F05E61CA3011000736F43 /* RaspMediaPlayerTests */,
+				E26F05F11CA3011000736F43 /* RaspMediaPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26F05CE1CA3011000736F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26F05E11CA3011000736F43 /* LaunchScreen.storyboard in Resources */,
+				E26F05DE1CA3011000736F43 /* Assets.xcassets in Resources */,
+				E26F05D91CA3011000736F43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05E51CA3011000736F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05F01CA3011000736F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E26F05CC1CA3011000736F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26F05D61CA3011000736F43 /* ViewController.swift in Sources */,
+				E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */,
+				E26F05DC1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05E31CA3011000736F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26F05EC1CA3011000736F43 /* RaspMediaPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26F05EE1CA3011000736F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26F05F71CA3011000736F43 /* RaspMediaPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E26F05E91CA3011000736F43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E26F05CF1CA3011000736F43 /* RaspMediaPlayer */;
+			targetProxy = E26F05E81CA3011000736F43 /* PBXContainerItemProxy */;
+		};
+		E26F05F41CA3011000736F43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E26F05CF1CA3011000736F43 /* RaspMediaPlayer */;
+			targetProxy = E26F05F31CA3011000736F43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E26F05D71CA3011000736F43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26F05D81CA3011000736F43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26F05E01CA3011000736F43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E26F05F91CA3011000736F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E26F05FA1CA3011000736F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E26F05FC1CA3011000736F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E26F05FD1CA3011000736F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E26F05FF1CA3011000736F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaspMediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspMediaPlayer.app/RaspMediaPlayer";
+			};
+			name = Debug;
+		};
+		E26F06001CA3011000736F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaspMediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspMediaPlayer.app/RaspMediaPlayer";
+			};
+			name = Release;
+		};
+		E26F06021CA3011000736F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaspMediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaspMediaPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E26F06031CA3011000736F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaspMediaPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaspMediaPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E26F05CB1CA3011000736F43 /* Build configuration list for PBXProject "RaspMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26F05F91CA3011000736F43 /* Debug */,
+				E26F05FA1CA3011000736F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26F05FB1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26F05FC1CA3011000736F43 /* Debug */,
+				E26F05FD1CA3011000736F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E26F05FE1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26F05FF1CA3011000736F43 /* Debug */,
+				E26F06001CA3011000736F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E26F06011CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26F06021CA3011000736F43 /* Debug */,
+				E26F06031CA3011000736F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E26F05DA1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E26F05DB1CA3011000736F43 /* RaspMediaPlayer.xcdatamodel */,
+			);
+			currentVersion = E26F05DB1CA3011000736F43 /* RaspMediaPlayer.xcdatamodel */;
+			path = RaspMediaPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E26F05C81CA3011000736F43 /* Project object */;
+}
