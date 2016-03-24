@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C2FCCB0D4DF103FD130128 /* Pods_RaspMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46E1DE78F6FED38B0858B52 /* Pods_RaspMediaPlayer.framework */; };
 		E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D31CA3011000736F43 /* AppDelegate.swift */; };
 		E26F05D61CA3011000736F43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D51CA3011000736F43 /* ViewController.swift */; };
 		E26F05D91CA3011000736F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F05D71CA3011000736F43 /* Main.storyboard */; };
@@ -15,6 +16,11 @@
 		E26F05E11CA3011000736F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */; };
 		E26F05EC1CA3011000736F43 /* RaspMediaPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05EB1CA3011000736F43 /* RaspMediaPlayerTests.swift */; };
 		E26F05F71CA3011000736F43 /* RaspMediaPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05F61CA3011000736F43 /* RaspMediaPlayerUITests.swift */; };
+		E26F060A1CA304EA00736F43 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F06081CA304EA00736F43 /* ContainerViewController.swift */; };
+		E26F060B1CA304EA00736F43 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F06091CA304EA00736F43 /* SidePanelViewController.swift */; };
+		E26F060D1CA304F400736F43 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F060C1CA304F400736F43 /* CenterViewController.swift */; };
+		E26F060F1CA343F400736F43 /* MainAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F060E1CA343F400736F43 /* MainAudioViewController.swift */; };
+		E26F06111CA3481800736F43 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F06101CA3481800736F43 /* AudioFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04237937AF45272A6F1ED095 /* Pods-RaspMediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaspMediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		CB67B7451F92ED778F087B26 /* Pods-RaspMediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaspMediaPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		E26F05D01CA3011000736F43 /* RaspMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaspMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F05D31CA3011000736F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26F05D51CA3011000736F43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		E26F05F21CA3011000736F43 /* RaspMediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspMediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F05F61CA3011000736F43 /* RaspMediaPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspMediaPlayerUITests.swift; sourceTree = "<group>"; };
 		E26F05F81CA3011000736F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26F06081CA304EA00736F43 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E26F06091CA304EA00736F43 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
+		E26F060C1CA304F400736F43 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		E26F060E1CA343F400736F43 /* MainAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAudioViewController.swift; sourceTree = "<group>"; };
+		E26F06101CA3481800736F43 /* AudioFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		E46E1DE78F6FED38B0858B52 /* Pods_RaspMediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaspMediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C2FCCB0D4DF103FD130128 /* Pods_RaspMediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DC21B578DF73701EFC58F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E46E1DE78F6FED38B0858B52 /* Pods_RaspMediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E26F05C71CA3011000736F43 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				E26F05EA1CA3011000736F43 /* RaspMediaPlayerTests */,
 				E26F05F51CA3011000736F43 /* RaspMediaPlayerUITests */,
 				E26F05D11CA3011000736F43 /* Products */,
+				F1A2FC96735A07B4BB637B3A /* Pods */,
+				22DC21B578DF73701EFC58F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +124,9 @@
 		E26F05D21CA3011000736F43 /* RaspMediaPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E26F060C1CA304F400736F43 /* CenterViewController.swift */,
+				E26F06081CA304EA00736F43 /* ContainerViewController.swift */,
+				E26F06091CA304EA00736F43 /* SidePanelViewController.swift */,
 				E26F05D31CA3011000736F43 /* AppDelegate.swift */,
 				E26F05D51CA3011000736F43 /* ViewController.swift */,
 				E26F05D71CA3011000736F43 /* Main.storyboard */,
@@ -106,6 +134,8 @@
 				E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */,
 				E26F05E21CA3011000736F43 /* Info.plist */,
 				E26F05DA1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld */,
+				E26F060E1CA343F400736F43 /* MainAudioViewController.swift */,
+				E26F06101CA3481800736F43 /* AudioFile.swift */,
 			);
 			path = RaspMediaPlayer;
 			sourceTree = "<group>";
@@ -128,6 +158,15 @@
 			path = RaspMediaPlayerUITests;
 			sourceTree = "<group>";
 		};
+		F1A2FC96735A07B4BB637B3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04237937AF45272A6F1ED095 /* Pods-RaspMediaPlayer.debug.xcconfig */,
+				CB67B7451F92ED778F087B26 /* Pods-RaspMediaPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26F05FB1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayer" */;
 			buildPhases = (
+				6A982204C050E36B305F9C1B /* Check Pods Manifest.lock */,
 				E26F05CC1CA3011000736F43 /* Sources */,
 				E26F05CD1CA3011000736F43 /* Frameworks */,
 				E26F05CE1CA3011000736F43 /* Resources */,
+				51CCE9E5C0404D879E4C171A /* Embed Pods Frameworks */,
+				1DA77F6DE8F9A4479B8178CF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +296,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DA77F6DE8F9A4479B8178CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51CCE9E5C0404D879E4C171A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A982204C050E36B305F9C1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E26F05CC1CA3011000736F43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +351,11 @@
 			files = (
 				E26F05D61CA3011000736F43 /* ViewController.swift in Sources */,
 				E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */,
+				E26F060B1CA304EA00736F43 /* SidePanelViewController.swift in Sources */,
+				E26F060D1CA304F400736F43 /* CenterViewController.swift in Sources */,
+				E26F06111CA3481800736F43 /* AudioFile.swift in Sources */,
+				E26F060A1CA304EA00736F43 /* ContainerViewController.swift in Sources */,
+				E26F060F1CA343F400736F43 /* MainAudioViewController.swift in Sources */,
 				E26F05DC1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +428,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -399,9 +495,11 @@
 		};
 		E26F05FC1CA3011000736F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04237937AF45272A6F1ED095 /* Pods-RaspMediaPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,9 +508,11 @@
 		};
 		E26F05FD1CA3011000736F43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB67B7451F92ED778F087B26 /* Pods-RaspMediaPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +586,7 @@
 				E26F05FD1CA3011000736F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E26F05FE1CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +595,7 @@
 				E26F06001CA3011000736F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E26F06011CA3011000736F43 /* Build configuration list for PBXNativeTarget "RaspMediaPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +604,7 @@
 				E26F06031CA3011000736F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
