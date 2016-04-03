@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		26C2FCCB0D4DF103FD130128 /* Pods_RaspMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46E1DE78F6FED38B0858B52 /* Pods_RaspMediaPlayer.framework */; };
+		E238AF1F1CB0694D006EF999 /* MainVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238AF1E1CB0694D006EF999 /* MainVideoViewController.swift */; };
+		E238AF221CB069C0006EF999 /* VideoFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238AF201CB069C0006EF999 /* VideoFile+CoreDataProperties.swift */; };
+		E238AF231CB069C0006EF999 /* VideoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238AF211CB069C0006EF999 /* VideoFile.swift */; };
+		E238AF261CB06A09006EF999 /* AudioFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238AF241CB06A09006EF999 /* AudioFile+CoreDataProperties.swift */; };
+		E238AF271CB06A09006EF999 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238AF251CB06A09006EF999 /* AudioFile.swift */; };
+		E24A50291CA72E660060580D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50281CA72E660060580D /* ApiManager.swift */; };
+		E24A50341CA84CCB0060580D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50331CA84CCB0060580D /* Album.swift */; };
+		E24A50361CA854100060580D /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50351CA854100060580D /* AlbumDetailViewController.swift */; };
+		E24A503E1CA895CC0060580D /* MainRadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A503D1CA895CC0060580D /* MainRadioViewController.swift */; };
+		E24A50411CA898300060580D /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50401CA898300060580D /* TableView.swift */; };
+		E24A50451CA899330060580D /* RadioStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50431CA899330060580D /* RadioStation+CoreDataProperties.swift */; };
+		E24A50461CA899330060580D /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A50441CA899330060580D /* RadioStation.swift */; };
 		E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D31CA3011000736F43 /* AppDelegate.swift */; };
 		E26F05D61CA3011000736F43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F05D51CA3011000736F43 /* ViewController.swift */; };
 		E26F05D91CA3011000736F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F05D71CA3011000736F43 /* Main.storyboard */; };
@@ -20,7 +32,7 @@
 		E26F060B1CA304EA00736F43 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F06091CA304EA00736F43 /* SidePanelViewController.swift */; };
 		E26F060D1CA304F400736F43 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F060C1CA304F400736F43 /* CenterViewController.swift */; };
 		E26F060F1CA343F400736F43 /* MainAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F060E1CA343F400736F43 /* MainAudioViewController.swift */; };
-		E26F06111CA3481800736F43 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F06101CA3481800736F43 /* AudioFile.swift */; };
+		E292A8C81CB0F549005E6470 /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292A8C71CB0F549005E6470 /* MyColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +55,19 @@
 /* Begin PBXFileReference section */
 		04237937AF45272A6F1ED095 /* Pods-RaspMediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaspMediaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		CB67B7451F92ED778F087B26 /* Pods-RaspMediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaspMediaPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaspMediaPlayer/Pods-RaspMediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		E238AF1E1CB0694D006EF999 /* MainVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVideoViewController.swift; sourceTree = "<group>"; };
+		E238AF201CB069C0006EF999 /* VideoFile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E238AF211CB069C0006EF999 /* VideoFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFile.swift; sourceTree = "<group>"; };
+		E238AF241CB06A09006EF999 /* AudioFile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AudioFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E238AF251CB06A09006EF999 /* AudioFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		E24A50281CA72E660060580D /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		E24A502A1CA735FC0060580D /* RaspMediaPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaspMediaPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		E24A50331CA84CCB0060580D /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E24A50351CA854100060580D /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		E24A503D1CA895CC0060580D /* MainRadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRadioViewController.swift; sourceTree = "<group>"; };
+		E24A50401CA898300060580D /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		E24A50431CA899330060580D /* RadioStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RadioStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E24A50441CA899330060580D /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
 		E26F05D01CA3011000736F43 /* RaspMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaspMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F05D31CA3011000736F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26F05D51CA3011000736F43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +86,7 @@
 		E26F06091CA304EA00736F43 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		E26F060C1CA304F400736F43 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		E26F060E1CA343F400736F43 /* MainAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAudioViewController.swift; sourceTree = "<group>"; };
-		E26F06101CA3481800736F43 /* AudioFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		E292A8C71CB0F549005E6470 /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
 		E46E1DE78F6FED38B0858B52 /* Pods_RaspMediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaspMediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +124,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E238AF1B1CB06898006EF999 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				E238AF1C1CB068B1006EF999 /* Model */,
+				E238AF1D1CB068B8006EF999 /* ViewController */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		E238AF1C1CB068B1006EF999 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E238AF201CB069C0006EF999 /* VideoFile+CoreDataProperties.swift */,
+				E238AF211CB069C0006EF999 /* VideoFile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E238AF1D1CB068B8006EF999 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E238AF1E1CB0694D006EF999 /* MainVideoViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E24A50391CA894C40060580D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E24A503A1CA895340060580D /* Model */,
+				E24A503B1CA8955D0060580D /* ViewController */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		E24A503A1CA895340060580D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E238AF241CB06A09006EF999 /* AudioFile+CoreDataProperties.swift */,
+				E238AF251CB06A09006EF999 /* AudioFile.swift */,
+				E24A50331CA84CCB0060580D /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E24A503B1CA8955D0060580D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E24A50351CA854100060580D /* AlbumDetailViewController.swift */,
+				E26F060E1CA343F400736F43 /* MainAudioViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E24A503C1CA8957D0060580D /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				E24A50421CA898C80060580D /* Model */,
+				E24A503F1CA895FD0060580D /* ViewController */,
+			);
+			name = Radio;
+			sourceTree = "<group>";
+		};
+		E24A503F1CA895FD0060580D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E24A503D1CA895CC0060580D /* MainRadioViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E24A50421CA898C80060580D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E24A50431CA899330060580D /* RadioStation+CoreDataProperties.swift */,
+				E24A50441CA899330060580D /* RadioStation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E26F05C71CA3011000736F43 = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +229,12 @@
 		E26F05D21CA3011000736F43 /* RaspMediaPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E26F060C1CA304F400736F43 /* CenterViewController.swift */,
+				E24A50391CA894C40060580D /* Audio */,
+				E24A503C1CA8957D0060580D /* Radio */,
+				E238AF1B1CB06898006EF999 /* Video */,
 				E26F06081CA304EA00736F43 /* ContainerViewController.swift */,
+				E24A50281CA72E660060580D /* ApiManager.swift */,
+				E26F060C1CA304F400736F43 /* CenterViewController.swift */,
 				E26F06091CA304EA00736F43 /* SidePanelViewController.swift */,
 				E26F05D31CA3011000736F43 /* AppDelegate.swift */,
 				E26F05D51CA3011000736F43 /* ViewController.swift */,
@@ -134,8 +243,9 @@
 				E26F05DF1CA3011000736F43 /* LaunchScreen.storyboard */,
 				E26F05E21CA3011000736F43 /* Info.plist */,
 				E26F05DA1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld */,
-				E26F060E1CA343F400736F43 /* MainAudioViewController.swift */,
-				E26F06101CA3481800736F43 /* AudioFile.swift */,
+				E24A502A1CA735FC0060580D /* RaspMediaPlayer-Bridging-Header.h */,
+				E24A50401CA898300060580D /* TableView.swift */,
+				E292A8C71CB0F549005E6470 /* MyColor.swift */,
 			);
 			path = RaspMediaPlayer;
 			sourceTree = "<group>";
@@ -238,6 +348,7 @@
 				TargetAttributes = {
 					E26F05CF1CA3011000736F43 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = X2NSLRY3QK;
 					};
 					E26F05E61CA3011000736F43 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -349,13 +460,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E238AF231CB069C0006EF999 /* VideoFile.swift in Sources */,
 				E26F05D61CA3011000736F43 /* ViewController.swift in Sources */,
+				E238AF221CB069C0006EF999 /* VideoFile+CoreDataProperties.swift in Sources */,
+				E24A50411CA898300060580D /* TableView.swift in Sources */,
+				E238AF271CB06A09006EF999 /* AudioFile.swift in Sources */,
+				E292A8C81CB0F549005E6470 /* MyColor.swift in Sources */,
+				E24A50451CA899330060580D /* RadioStation+CoreDataProperties.swift in Sources */,
+				E24A503E1CA895CC0060580D /* MainRadioViewController.swift in Sources */,
 				E26F05D41CA3011000736F43 /* AppDelegate.swift in Sources */,
+				E24A50291CA72E660060580D /* ApiManager.swift in Sources */,
+				E24A50361CA854100060580D /* AlbumDetailViewController.swift in Sources */,
 				E26F060B1CA304EA00736F43 /* SidePanelViewController.swift in Sources */,
 				E26F060D1CA304F400736F43 /* CenterViewController.swift in Sources */,
-				E26F06111CA3481800736F43 /* AudioFile.swift in Sources */,
 				E26F060A1CA304EA00736F43 /* ContainerViewController.swift in Sources */,
+				E238AF261CB06A09006EF999 /* AudioFile+CoreDataProperties.swift in Sources */,
+				E24A50341CA84CCB0060580D /* Album.swift in Sources */,
 				E26F060F1CA343F400736F43 /* MainAudioViewController.swift in Sources */,
+				E238AF1F1CB0694D006EF999 /* MainVideoViewController.swift in Sources */,
+				E24A50461CA899330060580D /* RadioStation.swift in Sources */,
 				E26F05DC1CA3011000736F43 /* RaspMediaPlayer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,11 +621,14 @@
 			baseConfigurationReference = 04237937AF45272A6F1ED095 /* Pods-RaspMediaPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -511,11 +637,14 @@
 			baseConfigurationReference = CB67B7451F92ED778F087B26 /* Pods-RaspMediaPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RaspMediaPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Miloslav.Linhart.RaspMediaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

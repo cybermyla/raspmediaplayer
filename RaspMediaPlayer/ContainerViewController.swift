@@ -42,7 +42,14 @@ class ContainerViewController: UIViewController {
         view.addSubview(centerNavigationController.view)
         addChildViewController(centerNavigationController)
         
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        centerNavigationController.navigationBar.titleTextAttributes = (titleDict as! [String : AnyObject])
+        
         centerNavigationController.didMoveToParentViewController(self)
+        
+        //this should be changed in order to respect last selected menuitem
+        menuItemSelected(MenuItem.Audio)
+        toggleLeftPanel()
     }
   
 }
@@ -107,7 +114,7 @@ extension ContainerViewController: ContainerViewControllerDelegate, SidePanelVie
     
     func menuItemSelected(item: MenuItem) {
         let vc = item.viewController()
-        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .Plain, target: self, action: "toggleLeftPanel")
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .Plain, target: self, action: #selector(ContainerViewControllerDelegate.toggleLeftPanel))
         self.centerNavigationController.viewControllers = [vc]
         //self.collapseSidePanels()
         self.toggleLeftPanel()
@@ -128,6 +135,14 @@ extension UIStoryboard {
     
     class func mainAudioViewController() -> MainAudioViewController? {
         return mainStoryboard().instantiateViewControllerWithIdentifier("MainAudioViewController") as? MainAudioViewController
+    }
+    
+    class func mainRadioViewController() -> MainRadioViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("MainRadioViewController") as? MainRadioViewController
+    }
+    
+    class func mainVideoViewController() -> MainVideoViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("MainVideoViewController") as? MainVideoViewController
     }
   
 }

@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RaspMediaPlayer/Alamofire.framework"
+  install_framework "Pods-RaspMediaPlayer/MagicalRecord.framework"
   install_framework "Pods-RaspMediaPlayer/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RaspMediaPlayer/Alamofire.framework"
+  install_framework "Pods-RaspMediaPlayer/MagicalRecord.framework"
   install_framework "Pods-RaspMediaPlayer/SwiftyJSON.framework"
 fi

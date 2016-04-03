@@ -19,7 +19,7 @@ class SidePanelViewController: UIViewController {
     
     var delegate: SidePanelViewControllerDelegate?
   
-    var menuItems = ["Audio", "Video", "Settings"]
+    var menuItems = ["Audio", "Radio", "Video"]
   
     
     struct TableView {
@@ -78,18 +78,14 @@ class MenuCell: UITableViewCell {
 
 enum MenuItem: Int {
     case Audio
+    case Radio
     case Video
-    case Settings
     
     func viewController() -> UIViewController {
         switch (self) {
         case Audio: return UIStoryboard.mainAudioViewController()!
-        case Video: return UIStoryboard.centerViewController()!
-        case Settings: return {
-            let vc = UIViewController();
-            vc.view.backgroundColor = UIColor.orangeColor();
-            return vc
-            }()
+        case Radio: return UIStoryboard.mainRadioViewController()!
+        case Video: return UIStoryboard.mainVideoViewController()!
         }
     }
 }

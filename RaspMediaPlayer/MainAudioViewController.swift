@@ -7,33 +7,27 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
-@objc
-protocol MainAudioViewControllerDelegate {
-    func dataLoadingFinished()
-}
 
-class MainAudioViewController: UIViewController {
+class MainAudioViewController: UIViewController, ApiManagerDelegate {
     
     var audioFiles = [AudioFile]()
+    var albums = [Album]()
+    
+    var apiManager = ApiManager()
     
     @IBOutlet weak var tableView: UITableView!
-    
-
-
-    
-    var delegate = self
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        getAudioFiles()
         
         tableView.dataSource = self;
         tableView.delegate = self;
+        
+        self.title = "Albums"
+        getAudioFiles()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,46 +35,17 @@ class MainAudioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    struct TableView {
-        struct CellIdentifiers {
-            static let AudioFileCell = "AudioFileCell"
-        }
-    }
-    
     @IBAction func playTapped(sender: AnyObject) {
-        let index = tableView.indexPathForSelectedRow!
-        let audioFile = audioFiles[index.row]
-        let url = "http://10.0.0.32/api/playback/play/\(audioFile.fileId)"
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                print("Play request successfully sent")
-            case .Failure(let error):
-                print(error)
-            }
+        let audioFile = audioFiles[tableView.indexPathForSelectedRow!.row]
+        if let fileId = audioFile.fileId as? Int {
+            apiManager.playSong(fileId)
         }
     }
     @IBAction func stopTapped(sender: AnyObject) {
-        let url = "http://10.0.0.32/api/playback/stop"
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                print("Stop request successfully sent")
-            case .Failure(let error):
-                print(error)
-            }
-        }
+        apiManager.stopSong()
     }
     @IBAction func pauseTapped(sender: AnyObject) {
-        let url = "http://10.0.0.32/api/playback/pause"
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                print("Pause request successfully sent")
-            case .Failure(let error):
-                print(error)
-            }
-        }
+        apiManager.pauseSong()
     }
     
 
@@ -88,46 +53,37 @@ class MainAudioViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    */
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
     
     func getAudioFiles() {
-        let url = "http://10.0.0.32/api/media/getallaudiofiles"
-        
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    
-                    for (_,subjsn):(String, JSON) in json {
-                        
-                        let fileId = subjsn["id"].intValue
-                        let title = subjsn["title"].stringValue
-                        var artist = ""
-                        if let art = subjsn["artist"].string {
-                            artist = art
-                        }
-                        var track = ""
-                        if let trc = subjsn["track"].string {
-                            track = trc
-                        }
-                        let album = subjsn["album"].stringValue
-                        
-                        self.audioFiles.append(AudioFile(fileId: fileId, title: title, artist: artist, track: track, album: album))
-                    }
-                    self.dataLoadingFinished()
+        apiManager.delegate = self
+        apiManager.getAudioFiles()
+    }
+    
+    func getAlbums() {
+        let fetchedResults = AudioFile.MR_fetchAllGroupedBy("album", withPredicate: nil, sortedBy: "album", ascending: true)
+        if let sections = fetchedResults.sections {
+            for section in sections {
+                let name = section.name
+                let audiofiles = section.objects as! [AudioFile]
+                var artist = ""
+                if audiofiles.count > 0 {
+                    artist = audiofiles[0].artist!
                 }
-            case .Failure(let error):
-                print(error)
+                albums.append(Album(name: name, artist: artist, audioFiles: audiofiles))
             }
         }
     }
-
-
+    
+    func dataDownloadFinished(sender: ApiManager) {
+        getAlbums()
+        self.tableView.reloadData()
+    }
 }
 
 
@@ -140,15 +96,15 @@ extension MainAudioViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return audioFiles.count
+        //return audioFiles.count
+        return albums.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.AudioFileCell, forIndexPath: indexPath) as! AudioFileCell
-        cell.configureForAudioFileCell(audioFiles[indexPath.row])
+        let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.AlbumCell, forIndexPath: indexPath) as! AlbumCell
+        cell.configureForAlbumCell(albums[indexPath.row])
         return cell
     }
-    
 }
 
 // Mark: Table View Delegate
@@ -156,24 +112,24 @@ extension MainAudioViewController: UITableViewDataSource {
 extension MainAudioViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //delegate?.menuItemSelected(MenuItem(rawValue: indexPath.row)!)
+
     }
     
-}
-
-extension MainAudioViewController: MainAudioViewControllerDelegate {
-    func dataLoadingFinished() {
-        self.tableView.reloadData();
+    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("AlbumDetailViewController") as! AlbumDetailViewController
+        destinationVC.album = self.albums[indexPath.row]
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
 
-class AudioFileCell: UITableViewCell {
+class AlbumCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var artistAndAlbum: UILabel!
     
-    func configureForAudioFileCell(audioFile: AudioFile) {
-        title.text = audioFile.title
-        artistAndAlbum.text = audioFile.album
+    func configureForAlbumCell(album: Album) {
+        self.accessoryType = UITableViewCellAccessoryType.DetailDisclosureButton
+        title.text = album.name
+        artistAndAlbum.text = album.artist
     }
     
 }

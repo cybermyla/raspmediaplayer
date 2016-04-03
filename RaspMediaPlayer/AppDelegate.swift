@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import MagicalRecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window!.rootViewController = containerViewController
         window!.makeKeyAndVisible()
+        
+        MagicalRecord.setupCoreDataStackWithStoreNamed("RaspMediaPlayer")
+        
+        setColors()
         
         return true
     }
@@ -111,6 +116,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+    
+    func setColors() {
+        UINavigationBar.appearance().barTintColor = MyColor.color5
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     }
 
 }
